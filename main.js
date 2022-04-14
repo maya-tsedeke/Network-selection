@@ -59,6 +59,7 @@ var best_Station = function (NetworkStation, deviceLocation) {
     var station_Speed = NetworkStation.reduce(function (former_distance, reach_distance) {
         return former_distance.speed > reach_distance.speed ? former_distance : reach_distance;
     });
+    exports.station_Speed = station_Speed;
     if (station_Speed.speed === 0) {
         return "No network station within reach for point ".concat(deviceLocation.x, ",").concat(deviceLocation.y);
     }
@@ -66,6 +67,7 @@ var best_Station = function (NetworkStation, deviceLocation) {
         return "Best network station for point ".concat(deviceLocation.x, ",").concat(deviceLocation.y, " is ").concat(station_Speed.location.y, ",").concat(station_Speed.location.x, ") with speed: ").concat(Math.round(station_Speed.speed * 1000) / 1000);
     }
 };
+
 //Find Best network station from station point to device
 var findbest_Station = function (deviceLocations) {
     return deviceLocations.map(function (deviceLocation) {
@@ -75,6 +77,10 @@ var findbest_Station = function (deviceLocations) {
         return best_speed_station_Device;
     });
 };
+exports.findbest_Station = findbest_Station;
 var best_speed_station_Device = findbest_Station((0, device_loc.DevicesLocation)());
+exports.best_speed_station_Device = best_speed_station_Device;
 //Display result here (loop untile complete all points)
 best_speed_station_Device.forEach(function (best_station_rout) { return console.log(best_station_rout); });
+
+

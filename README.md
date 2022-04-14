@@ -4,7 +4,7 @@
 This is Nordcloud, IBM company , Finland Tech assignment answer.
 The problem solved by JavaScript program 
  In this program I tried to address all questions , The code structure contains 5 JS files
- 
+
  1. **calculate_distance.js:** 
    
    Here used to calculate the distance of the device from the network station. The method I used to calculate is linear distance equestions.
@@ -91,3 +91,31 @@ You may then run node main.js again to test your changes.
 
 
 **NB:** You may also test your outcome using the browser console. 
+
+**TESTING INSTRUCTION**
+Jest testing tools were used in this solution.
+To install or add it to your project, run the following commands in the Ubuntu terminal or Visual Studio Code.It is widely used for JavaScript unit testing. 
+
+        $npm install --save-dev jest
+Note that the yarn commands are used in the Jest documentation, but npm will also work.
+
+Let's begin by writing a test for a find best station function that computes both distance and speed.
+To begin, add or create the following section to your package.json: 
+
+            {
+            "scripts": {
+                "test": "jest"
+            }
+            }
+Finally, type the following into the terminal, and Jest will print the following message:
+
+            $run yarn test 
+            or 
+            $npm run test 
+I used the Linux operating system in my Jest to print this message. You can use the code in any operating system or Visual Studio (IDE) 
+![Screenshot](3.png)
+
+The expected output should look like this:!
+[Screenshot](4.png)
+
+If you have any suggestions or changes, please let me know. 

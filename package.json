@@ -1,0 +1,30 @@
+{
+  "name": "tech-assignment",
+  "version": "1.0.0",
+  "description": "**Tech-assignment**",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maya-tsedeke/Tech-assignment.git"
+  },
+  "keywords": [
+    "package",
+    "Js",
+    "testing",
+    "jest",
+    "Nordcloud",
+    "assignment"
+  ],
+  "author": "Tsedeke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maya-tsedeke/Tech-assignment/issues"
+  },
+  "homepage": "https://github.com/maya-tsedeke/Tech-assignment#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
