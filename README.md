@@ -1,9 +1,10 @@
-*# **Tech-assignment**
+ **Tech-assignment**
 
 
 This is Nordcloud, IBM company , Finland Tech assignment answer.
 The problem solved by JavaScript program 
  In this program I tried to address all questions , The code structure contains 5 JS files
+ 
  1. **calculate_distance.js:** 
    
    Here used to calculate the distance of the device from the network station. The method I used to calculate is linear distance equestions.
@@ -49,19 +50,11 @@ We can also utilize it without the built-in function, as seen below.
             var result = (reach-distance)*(reach-distance);
             return res;
 
- 1. **define_device_loc.js:**
+ 3. **define_device_loc.js:**
 I defined and initialized the value of xy points for the device's current location in this file. 
 
- 2. **define_station.js:**
-             
-I defined and initialized the value of the current point of the station position in this file. 
- 3. **main.js:**
-   
-Because all code segments are written separately, any programmer can easily edit the main.js program.
-In this js file, the output is generated.
-
-
-Any coders may easily maintain and modify this. 
+ 4. **define_station.js:** I defined and initialized the value of the current point of the station position in this file. 
+ 5. **main.js:** Because all code segments are written separately, any programmer can easily edit the main.js program. In this js file, the output is generated. Any coders may easily maintain and modify this. 
 
  **INSTRUCTION**
 
