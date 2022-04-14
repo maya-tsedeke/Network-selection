@@ -1,20 +1,24 @@
-*# Tech-assignment
+*# **Tech-assignment**
+
+
 This is Nordcloud, IBM company , Finland Tech assignment answer.
 The problem solved by JavaScript program 
  In this program I tried to address all questions , The code structure contains 5 JS files
- 1. calculate_distance.js: Here used to calculate the distance of the device from the network station. The method I used to calculate is linear distance equestions.
+ 1. **calculate_distance.js:** 
+   
+   Here used to calculate the distance of the device from the network station. The method I used to calculate is linear distance equestions.
    
    Linear Distance means the shortest horizontal distance from the nearest point of a structure or object to the high speed or network line to the device from station.
 
-Description on distance calculation code:
+**Description on distance calculation code:**
 
                 var calculateDistance = function (point1, point2) {
-                    //Take the coordinates of two points we want to find the distance between.
+                    **Take the coordinates of two points we want to find the distance between.**
                     var x21 = point2.x - point1.x;
-                    // x1 is the horizontal coordinate (along the x axis) of Point 1, and 
-                    //x2 is the horizontal coordinate of Point 2. 
+                    **x1 is the horizontal coordinate (along the x axis) of Point 1, and** 
+                     **x2 is the horizontal coordinate of Point 2.** 
                     var y21 = point2.y - point1.y;
-                //*y1 is the vertical coordinate (along the y axis) of Point 1, 
+                    **y1 is the vertical coordinate (along the y axis) of Point 1, 
                     y2 is the vertical coordinate of Point 2.
                     For an example, take the points (0,0) and (100,100). If (0,0) is (x1,y1), then (100,100) is (x2,y2).
                     x21= 100-0 and y21 = 100-0  ==> (Xb,Yb) =(100.100) which is called base points between horizontal and vertical linear distances
@@ -28,7 +32,8 @@ Description on distance calculation code:
                 exports.calculateDistance = calculateDistance;
 
 
- 1. calculate_speed.js
+ 2. **calculate_speed.js:**
+   
  Speed calculation formula already defined in the problems: What is the speed of network From Current device location to pointed station location?
             Defined formula is 
 
@@ -40,17 +45,20 @@ Description on distance calculation code:
             var result = (reach-distance)*(reach-distance);
             return res;
 
- 3. define_device_loc.js
+ 3. **define_device_loc.js:**
+             
              In this file I defined and initialized the value of xy points for device current location
- 4. define_station.js
+ 4. **define_station.js:**
+             
               In this file I Defined and initialized the value of current point of the station location
- 5. main.js
+ 5. **main.js:**
+   
  Any programmer can easily modify in main.js programm because all code segmments are written supparatly 
  The output generated in this js file.
 
  This can be easily maintain and modified by any programmers.
 
- INSTRUCTION
+ **INSTRUCTION**
 
 If you want to test  a piece of code worked or not, you can use VSCode to run JavaScript.
 
