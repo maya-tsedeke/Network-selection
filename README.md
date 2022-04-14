@@ -5,6 +5,27 @@ The problem solved by JavaScript program
  1. calculate_distance.js: Here used to calculate the distance of the device from the network station. The method I used to calculate linear distance equestions
   Linear Distance means the shortest horizontal distance from the nearest point of a structure or object to the high speed or network line to the device from station.
 
+  var calculateDistance = function (point1, point2) {
+    //Take the coordinates of two points we want to find the distance between.
+    var x21 = point2.x - point1.x;
+   // x1 is the horizontal coordinate (along the x axis) of Point 1, and 
+   //x2 is the horizontal coordinate of Point 2. 
+   var y21 = point2.y - point1.y;
+   /*y1 is the vertical coordinate (along the y axis) of Point 1, 
+   y2 is the vertical coordinate of Point 2.
+
+   For an example, take the points (0,0) and (100,100). If (0,0) is (x1,y1), then (100,100) is (x2,y2).
+    x21= 100-0 and y21 = 100-0  ==> (Xb,Yb) =(100.100) which is called base points between horizontal and vertical linear distances
+    */
+    var Xpoint = Math.pow(x21, 2);  //((x2-x1),2)==>(100,2) 2 the power of 100
+    var Ypoint = Math.pow(y21, 2);  //((y2-y1),2)==>(100,2) 2 the power of 100
+   //Find the linear horizontal and vertical distance between the the two points
+    var DistanceOfTwoPoints = Math.sqrt(Xpoint + Ypoint); // final distance between two points
+    return DistanceOfTwoPoints;
+};
+exports.calculateDistance = calculateDistance;
+
+
  2. calculate_speed.js
  Speed calculation formula already defined in the problems: What is the speed of network From Current device location to pointed station location?
             Defined formula is 
@@ -45,26 +66,16 @@ After that, in visual studio code go to teminal and then select new terminal. In
 
 
 $git clone https://github.com/maya-tsedeke/Tech-assignment.git 
+
 $cd Tech-assignment
+
 $node main.js
+
 
 
 -------- After running the above comands you will see the following result in the terminal--------
 
-
-Best network station for point 0,0 is 0,0) with speed: 81
-
-No network station within reach for point 100,100
-
-Best network station for point 15,10 is 5,5) with speed: 3.311
-
-Best network station for point 18,18 is 20,20) with speed: 10.059
-
-Best network station for point 13,13 is 5,5) with speed: 2.844
-
-No network station within reach for point 25,99
-
-
+![Screenshot](2.png)
 
 To modify this code you can start from the define_device_loc and define_station.js file. write JavaScript code and save it. And the to test your modification you can write again node main.js.
 
