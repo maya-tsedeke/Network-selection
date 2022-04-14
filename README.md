@@ -10,15 +10,15 @@ The problem solved by JavaScript program
    
    Linear Distance means the shortest horizontal distance from the nearest point of a structure or object to the high speed or network line to the device from station.
 
-**Description on distance calculation code:**
+**Distance calculation code description:**
 
                 var calculateDistance = function (point1, point2) {
-                    **Take the coordinates of two points we want to find the distance between.**
+                    /*Take the coordinates of two points we want to find the distance between.*/
                     var x21 = point2.x - point1.x;
-                    **x1 is the horizontal coordinate (along the x axis) of Point 1, and** 
-                     **x2 is the horizontal coordinate of Point 2.** 
+                    /* x1 is the horizontal coordinate (along the x axis) of Point 1, and 
+                       x2 is the horizontal coordinate of Point 2. */
                     var y21 = point2.y - point1.y;
-                    **y1 is the vertical coordinate (along the y axis) of Point 1, 
+                    /*y1 is the vertical coordinate (along the y axis) of Point 1, 
                     y2 is the vertical coordinate of Point 2.
                     For an example, take the points (0,0) and (100,100). If (0,0) is (x1,y1), then (100,100) is (x2,y2).
                     x21= 100-0 and y21 = 100-0  ==> (Xb,Yb) =(100.100) which is called base points between horizontal and vertical linear distances
@@ -34,36 +34,41 @@ The problem solved by JavaScript program
 
  2. **calculate_speed.js:**
    
- Speed calculation formula already defined in the problems: What is the speed of network From Current device location to pointed station location?
-            Defined formula is 
+The formula for speed calculation is previously defined in the assignment problems:
+What is the network speed from the current device location to the location of the indicated station?
+The formula is defined as follows. 
+           
 
             speed = (reach - device's distance from network station)^2
 
-            in this file I wrot the code to calculate the speed of the connection from network station to the node or devices. To calculate this I used builtin math library which is called math.pow() function
-            Also we can use without builtin function like below
+This file contains the code for calculating the speed of a network connection between a network station and a node or devices.
+To do so, I utilized the math.pow() function from the built-in math library.
+
+We can also utilize it without the built-in function, as seen below. 
             
             var result = (reach-distance)*(reach-distance);
             return res;
 
- 3. **define_device_loc.js:**
-             
-             In this file I defined and initialized the value of xy points for device current location
- 4. **define_station.js:**
-             
-              In this file I Defined and initialized the value of current point of the station location
- 5. **main.js:**
-   
- Any programmer can easily modify in main.js programm because all code segmments are written supparatly 
- The output generated in this js file.
+ 1. **define_device_loc.js:**
+I defined and initialized the value of xy points for the device's current location in this file. 
 
- This can be easily maintain and modified by any programmers.
+ 2. **define_station.js:**
+             
+I defined and initialized the value of the current point of the station position in this file. 
+ 3. **main.js:**
+   
+Because all code segments are written separately, any programmer can easily edit the main.js program.
+In this js file, the output is generated.
+
+
+Any coders may easily maintain and modify this. 
 
  **INSTRUCTION**
 
 If you want to test  a piece of code worked or not, you can use VSCode to run JavaScript.
 
 
-This article explains how to run JavaScript problem solution in VSCode. To run this JavaScript code in Visual Studio, follow these steps:
+This instruction explains how to run JavaScript problem solution in VSCode. To run this JavaScript code in Visual Studio, follow these steps:
 
 
 1. The first step is to install Node.js on your MacBook/Windows/Ubuntu computer so that you may use it to call scripts.
@@ -81,15 +86,15 @@ After that, in visual studio code go to teminal and then select new terminal. In
 
 
 
--------- After running the above comands you will see the following result in the terminal--------
+————
+You will get the following result on the terminal after running the above commands.
+———— 
 
 ![Screenshot](2.png)
 
-To modify this code you can start from the define_device_loc and define_station.js file. write JavaScript code and save it. And the to test your modification you can write again node main.js.
-
-NB: You can also use browser console to test your result
-
-
+You can start by editing the define device loc and define station.js files.
+Create and store JavaScript code.
+You may then run node main.js again to test your changes.
 
 
-*
+**NB:** You may also test your outcome using the browser console. 
