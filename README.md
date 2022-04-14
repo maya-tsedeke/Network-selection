@@ -113,10 +113,11 @@ Finally, type the following into the terminal, and Jest will print the following
             or 
             $npm run test 
 I used the Linux operating system in my Jest to print this message. You can use the code in any operating system or Visual Studio (IDE) 
-![Screenshot](3.png)
+
+        ![Screenshot](3.png)
 
 The expected output should look like this:
 
-![Screenshot](4.png)
+         ![Screenshot](4.png)
 
 If you have any suggestions or changes, please let me know. 
