@@ -2,9 +2,11 @@
 This is Nordcloud, IBM company , Finland Tech assignment answer.
 The problem solved by JavaScript program 
  In this program I tried to address all questions , The code structure contains 5 JS files
- 1. calculate_distance.js: Here used to calculate the distance of the device from the network station. The method I used to calculate linear distance equestions
-  Linear Distance means the shortest horizontal distance from the nearest point of a structure or object to the high speed or network line to the device from station.
+ 1. calculate_distance.js: Here used to calculate the distance of the device from the network station. The method I used to calculate is linear distance equestions.
+   
+   Linear Distance means the shortest horizontal distance from the nearest point of a structure or object to the high speed or network line to the device from station.
 
+Description on distance calculation code:
             var calculateDistance = function (point1, point2) {
                 //Take the coordinates of two points we want to find the distance between.
                 var x21 = point2.x - point1.x;
@@ -26,7 +28,7 @@ The problem solved by JavaScript program
             exports.calculateDistance = calculateDistance;
 
 
- 2. calculate_speed.js
+ 1. calculate_speed.js
  Speed calculation formula already defined in the problems: What is the speed of network From Current device location to pointed station location?
             Defined formula is 
 
@@ -57,7 +59,7 @@ This article explains how to run JavaScript problem solution in VSCode. To run t
 
 
 1. The first step is to install Node.js on your MacBook/Windows/Ubuntu computer so that you may use it to call scripts.
-You can get Node.js for free by going to this link. https://nodejs.org/en/ => please install latest Node js
+        You can get Node.js for free by going to this link. https://nodejs.org/en/ => please install latest Node js
 2. The second step is to create a new folder and then open it in Visual Studio Code.
 After that, in visual studio code go to teminal and then select new terminal. In the terminal write the following command:
 
@@ -65,11 +67,9 @@ After that, in visual studio code go to teminal and then select new terminal. In
 ![Screenshot](1.jpg)
 
 
-$git clone https://github.com/maya-tsedeke/Tech-assignment.git 
-
-$cd Tech-assignment
-
-$node main.js
+        $git clone https://github.com/maya-tsedeke/Tech-assignment.git 
+        $cd Tech-assignment
+        $node main.js
 
 
 
