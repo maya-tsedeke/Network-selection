@@ -1,7 +1,7 @@
 
 // two dim-array
 var Devices = [
-    //Initialize the network station and the network speed from devices (x, y)
+    //Initialize the devices location (x, y)
     { x: 0,  y: 0 },
     { x: 100, y: 100 },
     { x: 15, y: 10 },

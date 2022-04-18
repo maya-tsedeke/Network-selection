@@ -4,7 +4,7 @@ var _Speed = require("./calculate_speed");
 var stations_loc = require("./define_station");
 var device_loc = require("./define_device_loc");
 
-//Defining device to station network connection
+//Defining the line distance from device to station network 
 var Distance_dev_sta = function (conStations, deviceLocation) {
     return conStations.map(function (connectpoints) {
         var x = connectpoints[0];
@@ -68,7 +68,7 @@ var best_Station = function (NetworkStation, deviceLocation) {
     }
 };
 
-//Find Best network station from station point to device
+//Find optimal network station from station point to device
 var findbest_Station = function (deviceLocations) {
     return deviceLocations.map(function (deviceLocation) {
         var connectedRout = Distance_dev_sta((0, stations_loc.StationsPoint)(), deviceLocation);

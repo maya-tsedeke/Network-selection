@@ -12,3 +12,9 @@ test("The Output shoud include points and speed: ", () => {
     expect(expected).toEqual(maindata.best_speed_station_Device);
 });
 
+
+test("The Output shoud include points and speed: ", () => {
+expect(expected).toEqual(maindata.best_speed_station_Device);
+});
+
+

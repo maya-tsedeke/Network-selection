@@ -72,12 +72,15 @@ After that, in visual studio code go to teminal and then select new terminal. In
 
 ![Screenshot](1.jpg)
 
-
+From Github
         $git clone https://github.com/maya-tsedeke/Tech-assignment.git 
-        $cd Tech-assignment
+        $cd Tech-assignment/NordCloud
         $node main.js
 
-
+OR From Amazone web Services (AWS) cloud 
+        $git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/JavaScript_Project
+        $cd JavaScript_Project/NordCloud
+        $node main.js
 
 ————
 You will get the following result on the terminal after running the above commands.
