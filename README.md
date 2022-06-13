@@ -1,7 +1,7 @@
  **NETWORK SPEED CALCULATION**
 
 The problem solved by JavaScript program 
- In this program I tried to address three two points (x,y,z) as lon, lat and redius , The code structure contains 5 JS files
+ In this program I tried to address three points (x,y,z) as lon, lat and redius , The code structure contains 5 JS files
 
  1. **calculate_distance.js:** 
    
